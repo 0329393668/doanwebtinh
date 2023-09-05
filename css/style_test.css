@@ -8,6 +8,25 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    .ctLLHI {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctLLHI .box-left,
+    .ctLLHI .box-right {
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 8px;
+        flex: 1;
+        min-width: 500px;
+    }
 }
 
 .ctLLHI .box-left,
@@ -150,7 +169,8 @@ h5 {
     border: 0px;
 }
 
-.jKjmRt .btnCheckout:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 111, 60);
+.jKjmRt .btnCheckout_dis:hover {
+    /* color: rgb(255, 255, 255); */
+    /* background-color: rgb(0, 111, 60); */
+    cursor: not-allowed;
 }

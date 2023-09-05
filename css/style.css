@@ -131,6 +131,8 @@
 .content_logo {
     flex: 1;
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .content_logo>img {
@@ -143,6 +145,7 @@
     flex: 1;
     flex-basis: 50%;
     margin: 50px 0;
+    min-width: 400px;
 }
 
 .content_text>h3 {
@@ -176,6 +179,9 @@ footer {
 
 .footer_icon>img {
     padding-left: 2rem;
+}
+.footer_icon {
+    margin-top: 20px;
 }
 
 .black {

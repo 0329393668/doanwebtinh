@@ -178,9 +178,22 @@ function renderBoxLeft(arr) {
 
 const paymentButton = document.getElementById('paymentButton');
 const policy = document.getElementById('policy');
+// policy.addEventListener('change', () => {
+//     paymentButton.disabled = policy.checked ? false : true;
+// })
 policy.addEventListener('change', () => {
-    paymentButton.disabled = policy.checked ? false : true;
-})
+    if (policy.checked) {
+        paymentButton.disabled = false;
+        paymentButton.style.backgroundColor = 'rgb(0, 111, 60)';
+        paymentButton.style.color = 'rgb(255, 255, 255)';
+        paymentButton.style.cursor = 'pointer';
+    } else {
+        paymentButton.disabled = true;
+        paymentButton.style.backgroundColor = 'rgb(241, 241, 241)';
+        paymentButton.style.color = 'rgb(144, 144, 144)';
+        paymentButton.style.cursor = 'not-allowed';
+    }
+});
 paymentButton.addEventListener('click', function () {
     const itemsJSONCheck = localStorage.getItem('currents');
     const itemsCheck = JSON.parse(itemsJSONCheck);

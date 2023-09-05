@@ -313,7 +313,7 @@ function renderProduct(product) {
                                             <div class="item-info__quantity">
                                                 <label for="qty">Số lượng</label>
     
-                                                <div class="add-item">
+                                                <div class="add-item" style="display: flex;">
                                                 <span class="change-qty decrease"
                                                     >-</span>
                                                 <span class="quantity" id="quantity-modal">1</span>

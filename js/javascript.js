@@ -127,7 +127,7 @@ function renderUI(arr) {
     for (let i = 0; i < arr.length; i++) {
         const p = arr[i];
         productsEle.innerHTML += `
-        <div class=" col-sm-3 col-xs-6  product-item ">
+        <div class=" col-sm-6 col-md-4 col-lg-3  product-item ">
         <a class="item-wrapper">
             <img class="item-img img-responsive center-block lazy"
                 data-original="${p.img}"

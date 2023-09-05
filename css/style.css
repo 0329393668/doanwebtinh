@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.h_top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 0 5px;
+}
+
+.h_logo>img {
+    width: 60px;
+    height: 45px;
+}
+
+.h_right_sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h_right {
+    margin-left: 30px;
+}
+
+.h_right_sub>a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 16px;
+}
+
+.h_right>a:hover {
+    opacity: 0.9;
+    color: black;
+}
+
+.h_right>button {
+    border: 1px solid #0c713d;
+    color: #0c713d;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+}
+
+.h_right>button {
+    opacity: 0.9;
+}
+
+.h_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    border-top: 3px solid #f5f5f5;
+    border-bottom: 3px solid #f5f5f5;
+}
+
+.nav_a {
+    font-size: 14px;
+    background-color: #fff;
+    color: #898989;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+.nav_a:hover {
+    color: #0c713d;
+    cursor: pointer;
+}
+
+.carousel-item {
+    height: 570px;
+}
+
+.carousel-item>img {
+    height: 100%;
+    width: 100%;
+}
+
+.b_container {
+    background-image: url(https://phuclong.com.vn/uploads/banner/6313d6d02ac48e-2949308c6b040fcoffeecopy.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.b_container_sub {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.b_container_menu {
+    background-image: url(https://phuclong.com.vn/images/background/bg_team.svg);
+    background-position: center;
+    padding: 50px 0;
+}
+
+.b_container_menu1 {
+    padding-top: 40px;
+    margin: 0 auto;
+    background-image: url(https://phuclong.com.vn/images/background/bg_tealeaf.svg), url(https://phuclong.com.vn/images/background/bg_team.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, center bottom;
+    background-size: 20% auto, 75% auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.content_logo {
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.content_logo>img {
+    width: 530px;
+    height: 530px;
+}
+
+.content_text {
+    padding: 0 70px;
+    flex: 1;
+    flex-basis: 50%;
+    margin: 50px 0;
+}
+
+.content_text>h3 {
+    color: #0c713d;
+}
+
+.content_sub {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: #0c713d;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.f-social li i {
+    color: #fff;
+}
+
+.f-social {
+    display: flex;
+    padding-left: none;
+    margin-top: 20px;
+}
+
+.f-social li {
+    margin: 0 10px;
+}
+
+.footer_icon>img {
+    padding-left: 2rem;
+}
+
+.black {
+    background-color: #010101;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+/* Cà phê */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+.breadcrumb li a:hover {
+    color: red !important;
+}
+
+.breadcrumb li {
+    margin: 0 15px;
+}
+
+.container h1 {
+    color: #0c713d;
+    width: 100%;
+    font-size: 36px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.separator-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Menu */
+.item-img {
+    height: 180px;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item-info {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: #000;
+}
+
+.item-name {
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    line-height: 28px;
+    color: #010101;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    min-height: 28px;
+    text-transform: capitalize;
+}
+
+.item-desc {
+    margin-bottom: 15px;
+}
+
+.item-price {
+    font-weight: 900;
+    color: #0C713D !important;
+    font-size: 18px;
+    font-family: Tahoma;
+    margin-bottom: 15px;
+}
+
+.btn.btn-default {
+    color: #0C713D;
+    border-color: #0C713D;
+}
+
+.add-to-cart {
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.btn {
+    font-family: 'Muli', sans-serif;
+    transition: all 0.2s linear;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-size: 13px;
+    padding: 7px 12px;
+}
+
+.item-info>button:hover {
+    background-color: #0C713D;
+    color: #fff;
+}
+
+.product-item:hover {
+    box-shadow: 0 1px 8px 0 rgba(107, 107, 107, 0.27);
+    cursor: pointer;
+}
+
+.product-item {
+    margin-bottom: 45px;
+}
+
+.product-item {
+    text-align: center;
+    transition: margin 0.3s;
+    border-radius: 5px;
+    padding: 30px 15px;
+    min-height: 380px;
+    max-height: 380px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.category_filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category_filter_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.category_filter_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    min-width: 120px;
+}
+
+.selectpicker {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.selectpicker:focus {
+    border-color: #000 !important;
+    outline: none !important;
+
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.input-group-btn .btn:hover {
+    background-color: #0C713D;
+    color: #fff;
+}
+
+.input-group-btn .btn:focus {
+    box-shadow: none !important;
+}
+
+/* Show 1 sản phẩm */
+.product-modal {
+    padding: 40px;
+    background: url(https://phuclong.com.vn/images/background/bg_popup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-dialog {
+    width: 60% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px !important;
+    z-index: 1 !important;
+}
+
+.modal-dialog {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 60% !important;
+        margin: 1.75rem auto;
+    }
+
+}
+
+.product-modal .item-price {
+    text-align: center;
+    color: #0C713D;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.product-modal .item-info>div {
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.product-modal .item-info__name {
+    font-family: 'Muli', sans-serif;
+    color: #0C713D;
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.product-modal .item-info label {
+    float: left;
+    margin-right: 30px;
+    min-width: 70px;
+    line-height: 37px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.product-modal .list-inline>li {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2px;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.product-modal .list-inline>li.active a,
+.product-modal .list-inline>li.active .label-extra {
+    color: #fff;
+    background-color: #0C713D;
+}
+
+.product-modal .list-inline>li a,
+.product-modal .list-inline>li .label-extra {
+    display: inline-block;
+    text-transform: none;
+    border: 1px solid #B3B3B3;
+    border-radius: 2px;
+    background: transparent;
+    margin-left: 2px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #000;
+}
+
+.product-modal .list-inline>li a:hover {
+    color: #fff;
+    background-color: #0C713D;
+}
+
+.btn.btn-default:hover {
+    background-color: #0C713D;
+    color: #fff;
+}
+
+.item-info__price div {
+    color: #0C713D;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.add-item span.change-qty.decrease {
+    border-radius: 4px 0 0 4px;
+}
+
+.add-item span.change-qty.increase {
+    border-radius: 0 4px 4px 0;
+}
+
+.add-item span {
+    border: 1px solid #B3B3B3;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.img-responsive>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal.fade .modal-dialog>.btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    width: 50px;
+    padding: 1px 0 3px;
+}
+
+.modal.fade .modal-dialog>.btn-close:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 2 !important;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Thanh toán */
+.box_show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 50px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_show_img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 ;
+}
+
+.box_show_text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+
+/* Giỏ Hàng */
+
+.container__cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 80px 0 40px;
+}
+
+.cart__show {
+    height: 120px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    position: relative;
+}
+.closesub {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.closesub i:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.card__sub {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title__cart-product p {
+    font-weight: bold;
+}
+
+.title__cart-imfor p {
+    margin-right: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carl__product {
+    display: flex;
+    align-items: center;
+}
+
+.carl__product img {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.cart__price-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cart__price-item button {
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+}
+
+.cart__price-item input {
+    width: 25px;
+    padding-left: 8px;
+}
+
+.price__cart-total {
+    margin: 20px 140px 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price__cart-total p {
+    font-weight: bold;
+}
+
+.price__cart-total strong {
+    font-size: 20px;
+}

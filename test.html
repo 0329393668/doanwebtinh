@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Nút Thanh toán -->
+    <button id="paymentButton">Thanh toán</button>
+
+    <div id="paymentForm" style="display: none;">
+        <h2>Nhập thông tin thanh toán</h2>
+        <form id="paymentInfoForm">
+            <label for="nameInput">Tên:</label>
+            <input type="text" id="nameInput" required><br>
+
+            <label for="phoneInput">Số điện thoại:</label>
+            <input type="phone" id="phoneInput" required><br>
+
+            <label for="addressInput">Địa chỉ:</label>
+            <input type="text" id="addressInput" required><br>
+
+            <button type="submit">Xác nhận</button>
+        </form>
+    </div>
+
+    <div id="successMessage" style="display: none;">
+        <h2>Thanh toán thành công!</h2>
+        <p>Cám ơn bạn đã thực hiện thanh toán.</p>
+    </div>
+    <script>
+        const paymentButton = document.getElementById('paymentButton');
+        const paymentForm = document.getElementById('paymentForm');
+        const paymentInfoForm = document.getElementById('paymentInfoForm');
+        const successMessage = document.getElementById('successMessage');
+
+        paymentButton.addEventListener('click', function () {
+            paymentForm.style.display = 'block';
+        });
+
+        paymentInfoForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Ngăn chặn việc gửi form đi
+
+            const name = document.getElementById('nameInput').value;
+            const phone = document.getElementById('phoneInput').value;
+            const address = document.getElementById('addressInput').value;
+
+            if (name && phone && address) {
+                paymentForm.style.display = 'none';
+                successMessage.style.display = 'block';
+            } else {
+                alert('Vui lòng điền đầy đủ thông tin.');
+            }
+        });
+    </script>
+</body>
+
+</html>

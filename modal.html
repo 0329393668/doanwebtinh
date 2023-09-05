@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+    <link rel="stylesheet" href="./css/style_show.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-default add-to-cart btn-primary" data-id="683" data-name="Hồng trà caramel dừa đá xay"
+        data-price="70000" data-bs-toggle="modal" data-bs-target="#exampleModal">Đặt hàng</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Đặt hàng
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content" ng-show="isTab(1)">
+                <div class="modal-body product-modal">
+                    <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img style="display: block;
+                            max-width: 100%;
+                            height: auto;" class="item-img img-responsive center-block"
+                                ng-src="https://phuclong.com.vn/uploads/dish/437b59a57e7efd-6500030465000305trlongdacaramel.png"
+                                src="https://phuclong.com.vn/uploads/dish/437b59a57e7efd-6500030465000305trlongdacaramel.png">
+
+                            <div class="item-price ng-binding"> 55.000 đ</div>
+
+                            <!-- <ul class="text-center item-info__rating list-inline">
+                                <li ng-repeat="r in productRate track by $index" class="" ng-class='r == 1? "icon-pli-rating-fill" : "icon-pli-rating-line"'></li>
+                            </ul> -->
+
+
+                        </div>
+                        <div class="col-md-7">
+                            <div class="item-info">
+                                <div class="item-info__name hidden-xs hidden-sm visible-md visible-lg ng-binding">
+                                    Trà Ô long dừa Caramel
+                                </div>
+                                <div class="item-info__excerpt ng-binding">
+                                </div>
+                                <!-- ngIf: productSizes.length > 0 -->
+                                <div class="item-info__size ng-scope" ng-if="productSizes.length > 0">
+                                    <label for="size">Kích cỡ</label>
+                                    <ul class="list-inline">
+                                        <!-- ngRepeat: size in productSizes --><!-- ngIf: size.price >= 0 -->
+                                        <li ng-if="size.price >= 0" ng-repeat="size in productSizes"
+                                            ng-class="{active : productSize === size }" ng-click="changeSize(size)"
+                                            class="ng-scope active">
+                                            <a href="javascript:void(0);" class="ng-binding">Ice regular size </a>
+                                        </li>
+                                        <!-- end ngIf: size.price >= 0 --><!-- end ngRepeat: size in productSizes --><!-- ngIf: size.price >= 0 -->
+                                        <li ng-if="size.price >= 0" ng-repeat="size in productSizes"
+                                            ng-class="{active : productSize === size }" ng-click="changeSize(size)"
+                                            class="ng-scope">
+                                            <a href="javascript:void(0);" class="ng-binding">Big size ice </a>
+                                        </li>
+                                        <!-- end ngIf: size.price >= 0 --><!-- end ngRepeat: size in productSizes -->
+                                    </ul>
+
+
+                                </div><!-- end ngIf: productSizes.length > 0 -->
+
+                                <!-- ngIf: extras.length > 0 -->
+
+                                <div class="item-info__quantity">
+                                    <label for="qty">Số lượng</label>
+
+                                    <div class="add-item">
+                                        <span class="change-qty decrease" ng-click="decrease(product)">-</span><span
+                                            class="quantity ng-binding">1</span><span class="change-qty increase"
+                                            ng-click="increase(product)">+</span>
+                                    </div>
+
+                                </div>
+                                <div class="item-info__price">
+                                    <label for="">Giá</label>
+                                    <div class="color-primary ng-binding"> 55.000 đ </div>
+                                </div>
+                            </div>
+
+
+                            <div class="product-action">
+
+                                <button class="btn btn-default add-to-cart single" data-id="685"
+                                    data-dismiss="modal">Đặt hàng</button>
+
+                                <!--        <a name="checkout" class="btn btn-default" href="https://phuclong.com.vn/thanh-toan"> Thanh toán</a> -->
+
+
+                                <input type="hidden" name="productSize"
+                                    value="{&quot;title&quot;:&quot;[:vi]Ice regular size[:en]Ice regular size[:]&quot;,&quot;id&quot;:2,&quot;price&quot;:55000}">
+                                <input type="hidden" name="productPrice" id="productPrice" value="55000">
+                                <input type="hidden" name="productExtraPrice" value="">
+                                <input type="hidden" name="productQty" value="1">
+                                <input type="hidden" name="orderNotes" value="">
+                                <input type="hidden" name="productExtras" value="">
+                                <input type="hidden" name="productSizeId" value="2">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

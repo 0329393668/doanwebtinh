@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" href="https://phuclong.com.vn/images/logo.png" sizes="32x32">
+    <link rel="stylesheet" href="./css/style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__logo">
+                Đăng ký
+            </div>
+            <form id="register-form" action="#" method="post">
+                <label for="username"><i class="fa-solid fa-user"></i> Tên tài khoản</label>
+                <input type="text" id="username1" name="username" required placeholder="Nhập tên người dùng của bạn">
+
+                <label for="password" style="margin-top: 16px;"><i class="fa-solid fa-lock"></i> Mật khẩu</label>
+                <input type="password" id="password1" name="password" required placeholder="Nhập mật khẩu của bạn">
+
+                <label for="password" style="margin-top: 16px;"><i class="fa-solid fa-lock"></i> Nhập lại mật
+                    khẩu</label>
+                <input type="password" id="password2" name="password" required placeholder="Nhập mật khẩu của bạn">
+
+                <input type="submit" value="Đăng ký" class="login__button">
+            </form>
+            <div class="signup__button" onclick="login()"><a href="#" class="text">Đăng nhập</a></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/javascriptlg.js"></script>
+
+</body>
+
+</html>

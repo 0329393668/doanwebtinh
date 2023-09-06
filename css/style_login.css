@@ -24,6 +24,7 @@ body {
 }
 
 .content {
+    min-width: 360px;
     height: auto;
     width: calc(100vw / 3);
     background-color: white;

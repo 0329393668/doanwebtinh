@@ -1,46 +1,26 @@
 const cardRender = document.querySelector('.card_render');
 const itemsJSON = localStorage.getItem('currents');
 const items = JSON.parse(itemsJSON);
-function login() {
-    window.location.replace('/login.html');
-}
-function home() {
-    window.location.replace('/index.html');
-}
-function cafe() {
-    window.location.replace('/cafe.html');
-}
-function tea() {
-    window.location.replace('/tea.html');
-}
-function menu() {
-    window.location.replace('/menu.html');
-}
-function pay() {
-    window.location.replace('/pay.html');
-}
-function cart() {
-    window.location.replace('/card.html');
-}
+
 function renderCart(arr) {
     cardRender.innerHTML = '';
     for (let i = 0; i < arr.length; i++) {
         const p = arr[i];
         cardRender.innerHTML += `
-        <div class="row col-md-12 cart__show">
-        <div class="carl__product col-md-3">
+        <div class="row col-12 cart__show">
+        <div class="carl__product col-3">
             <img src="${p.img}"
-                width="20%" alt="Ảnh">
+                width="30%" alt="Ảnh">
             <strong>${p.name} <br> Ice regular size </strong>
         </div>
-        <div class="cart__price col-md-9 card__sub">
-            <div class="cart__price-item col-md-3" style="font-size: 18px;">${p.price.toLocaleString()} đ</div>
-            <div class="cart__price-item col-md-3 ">
+        <div class="cart__price col-9 card__sub">
+            <div class="cart__price-item col-3">${p.price.toLocaleString()} đ</div>
+            <div class="cart__price-item col-3 ">
                 <button class="decrease" onclick="show(${p.id})"> - </button>
                 <span style="margin: 0 10px;" class="quantity" id="quantity-modal" >${p.quantity}</span>
                 <button class="increase" onclick="show(${p.id})"> + </button>
             </div>
-            <div class="cart__price-item col-md-3" style="font-size: 18px;">${(p.quantity * p.price).toLocaleString()} đ</div>
+            <div class="cart__price-item col-3">${(p.quantity * p.price).toLocaleString()} đ</div>
             </div>
             <div class="closesub" style="width: auto !important;">
                 <i onclick="remove1(${p.id})" class="fa-solid fa-x"></i>

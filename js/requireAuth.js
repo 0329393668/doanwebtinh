@@ -1,8 +1,13 @@
 const usename = document.getElementById('usename');
 const currentUser = localStorage.getItem('currentUser');
 const currentUserSub = JSON.parse(currentUser);
+
+const requireAuthPaths = ["pay"];
+const path = window.location.pathname.replaceAll(".html","").replaceAll("/","");
 if (!currentUser) {
-    window.location.replace('/login.html')
+    if(requireAuthPaths.includes(path)) {
+        window.location.replace('/login.html')
+    }
 } else {
     renderCart(currentUserSub);
 }

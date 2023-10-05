@@ -24,7 +24,7 @@
                 <img src="https://phuclong.com.vn/images/logo_2.png" alt="Logo">
             </div>
             <div class="h_right_sub">
-                <a id="usename" href="#" onclick="login()">
+                <a id="usename" href="./login.html">
                     <strong>Đăng nhập</strong>
                 </a>
                 <div class="h_right">
@@ -34,7 +34,7 @@
                     <div id="mini-cart" class="mini-cart">
                         <div class="mini-cart__content">
                             <div class="cart-info">
-                                Giỏ hàng của bạn <a name="checkout" href="#" class="btn btn-default" onclick="cart()">
+                                Giỏ hàng của bạn <a name="checkout" href="./card.html" class="btn btn-default">
                                     Xem
                                     chi tiết </a>
                             </div>
@@ -82,9 +82,9 @@
                                 <label>Tổng tiền</label> <span id="all-total" class="price ng-binding"
                                     ng-bind="total().money">100.000 đ</span>
                             </div>
-                            <div class="checkout-twostyle__ButtonWrapper-sc-14n4o2h-2 jKjmRt" style="padding-top: 0px;">
-                                <button type="submit" class="button__StyledButton-sc-6gren8-0 hCwjNQ btnCheckout button_hover"
-                                    onclick="pay()">Thanh toán</button>
+                            <div class="jKjmRt" style="padding-top: 0px;">
+                                <a href="./pay.html"><button type="submit" class="hCwjNQ btnCheckout button_hover"
+                                    >Thanh toán</button></a>
                             </div>
                         </div>
                     </div>
@@ -101,21 +101,21 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav_a" aria-current="page" href="#"
-                                    onclick="home()">TRANG CHỦ</a>
+                                <a class="nav_a" aria-current="page" href="./index.html"
+                                    >TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="cafe()">CÀ PHÊ</a>
+                                <a class="nav_a" href="./cafe.html">CÀ PHÊ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="tea()">TRÀ</a>
+                                <a class="nav_a" href="./tea.html">TRÀ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="menu()">THỨC UỐNG</a>
+                                <a class="nav_a" href="./menu.html">THỨC UỐNG</a>
                             </li>
                             <li class="nav-item">
-                                <a  style="color: #0c713d;" class="nav_a" href="#" tabindex="-1" aria-disabled="true"
-                                    onclick="pay()">THANH TOÁN</a>
+                                <a  style="color: #0c713d;" class="nav_a" href="./pay.html" tabindex="-1" aria-disabled="true"
+                                    >THANH TOÁN</a>
                             </li>
                         </ul>
                     </div>
@@ -133,9 +133,9 @@
     <div class="b_container_sub">
         <div class="container">
             <ul class="breadcrumb" aria-label="breadcrumbs">
-                <li><a href="#" onclick="home()">Trang chủ</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
                 <P>/</P>
-                <li class="active"><a style="color: #777" href="#" onclick="pay()">Thanh toán</a></li>
+                <li class="active"><a style="color: #777" href="./pay.html">Thanh toán</a></li>
             </ul>
             <h1>Thanh toán</h1>
             <div class="separator-icon gray">
@@ -183,7 +183,7 @@
                             <h5 class="total" id="total1">0 đ</h5>
                         </div>
                     </div>
-                    <div class="paymentstyle__PaymentWrapper-sc-1lu9vcf-0 lclxhE">
+                    <div class="lclxhE">
                         <div class="payment-row">
                             <div class="payment-head">
                                 <h5 class="title">Phương thức thanh toán</h5>
@@ -193,14 +193,14 @@
                                     <legend class="MuiFormLabel-root"></legend>
                                     <div class="MuiFormGroup-root MuiFormGroup-row" role="radiogroup"
                                         aria-label="paymentMethod" id="paymentMethod"><label
-                                            class="MuiFormControlLabel-root label1"><span
-                                                class="MuiButtonBase-root MuiIconButton-root jss45 MuiRadio-root MuiRadio-colorPrimary jss46 Mui-checked MuiIconButton-colorPrimary"
-                                                aria-disabled="false"><span class="MuiIconButton-label">
+                                            class="label1"><span
+                                                class="MuiButtonBase-root jss46"
+                                                aria-disabled="false">
                                                     <input class="jss48" name="paymentMethod" type="radio" value="PAYOO"
                                                         checked="">
 
                                                 </span></span><span
-                                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">
+                                                class="MuiTypography-body1">
                                                 <div style="display: flex;">
                                                     <i style="height: 20px; width: 20px; font-size: 20px; color:#0c713d;"
                                                         class=" fa-regular
@@ -210,13 +210,13 @@
                                                 </div>
                                             </span></label>
                                         <div style="padding-left: 24px;"></div><label
-                                            class="MuiFormControlLabel-root label1"><span
-                                                class="MuiButtonBase-root MuiIconButton-root jss45 MuiRadio-root MuiRadio-colorPrimary MuiIconButton-colorPrimary"
-                                                aria-disabled="false"><span class="MuiIconButton-label"><input
+                                            class="label1"><span
+                                                class="MuiButtonBase-root"
+                                                aria-disabled="false"><input
                                                         class="jss48" name="paymentMethod" type="radio" value="MOMO">
 
                                                 </span><span class="MuiTouchRipple-root"></span></span><span
-                                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">
+                                                class="MuiTypography-body1">
                                                 <div style="display: flex;">
                                                     <svg width="20" height="20" viewBox="0 0 72 72" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -241,13 +241,13 @@
                                                 </div>
                                             </span></label>
                                         <div style="padding-left: 24px;"></div><label
-                                            class="MuiFormControlLabel-root label1"><span
-                                                class="MuiButtonBase-root MuiIconButton-root jss45 MuiRadio-root MuiRadio-colorPrimary MuiIconButton-colorPrimary"
-                                                aria-disabled="false"><span class="MuiIconButton-label"><input
+                                            class="label1"><span
+                                                class="MuiButtonBase-root"
+                                                aria-disabled="false"><input
                                                         class="jss48" name="paymentMethod" type="radio" value="ZALO">
 
                                                 </span><span class="MuiTouchRipple-root"></span></span><span
-                                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">
+                                                class="MuiTypography-body1">
                                                 <div style="display: flex;">
                                                     <img style="height: 20px; width: 20px;"
                                                         src="https://play-lh.googleusercontent.com/NfFBz1Rxk0nQ7RsOk0kXbi1AEp1ZJ3rzJHbwRlmheZEDPPHh7dscqyxyX-ehxTl7tw=w240-h480-rw"
@@ -256,13 +256,13 @@
                                                 </div>
                                             </span></label>
                                         <div style="padding-left: 24px;"></div><label
-                                            class="MuiFormControlLabel-root label1"><span
-                                                class="MuiButtonBase-root MuiIconButton-root jss45 MuiRadio-root MuiRadio-colorPrimary MuiIconButton-colorPrimary"
-                                                aria-disabled="false"><span class="MuiIconButton-label"><input
+                                            class="label1"><span
+                                                class="MuiButtonBase-root"
+                                                aria-disabled="false"><input
                                                         class="jss48" name="paymentMethod" type="radio" value="SHOPEE">
 
                                                 </span><span class="MuiTouchRipple-root"></span></span><span
-                                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">
+                                                class="MuiTypography-body1">
                                                 <div style="display: flex;">
                                                     <img style="height: 20px; width: 20px;"
                                                         src="https://play-lh.googleusercontent.com/iYdFE7XKVVxIxMKgkBJUwuYpgRu7CT74dUOh639SRecGNskBMdPrJM1KBL8pLszXpQ"
@@ -271,13 +271,13 @@
                                                 </div>
                                             </span></label>
                                         <div style="padding-left: 24px;"></div><label
-                                            class="MuiFormControlLabel-root label1"><span
-                                                class="MuiButtonBase-root MuiIconButton-root jss45 MuiRadio-root MuiRadio-colorPrimary MuiIconButton-colorPrimary"
-                                                aria-disabled="false"><span class="MuiIconButton-label"><input
+                                            class="label1"><span
+                                                class="MuiButtonBase-root"
+                                                aria-disabled="false"><input
                                                         class="jss48" name="paymentMethod" type="radio" value="ZALO">
 
                                                 </span><span class="MuiTouchRipple-root"></span></span><span
-                                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">
+                                                class="MuiTypography-body1">
                                                 <div style="display: flex;">
                                                     <i style="height: 20px; width: 20px; font-size: 20px; color:#0c713d;"
                                                         class="fa-solid fa-money-bill"></i>
@@ -285,37 +285,35 @@
                                                 </div>
                                             </span></label>
                                     </div>
-                                    <p class="MuiFormHelperText-root"></p>
                                 </fieldset>
                             </div>
                         </div>
                     </div>
-                    <div class="invoicestyle__InvoiceWrapper-sc-1lsvrzw-0 erPkup"
+                    <div class="erPkup"
                         style="padding-top: 0px; padding-bottom: 0px;">
                         <div class="invoice-head">
                             <div class="jss43">
                                 <fieldset class="MuiFormControl-root">
-                                    <div class="MuiFormGroup-root"><label class="MuiFormControlLabel-root label1"><span
-                                                class="MuiButtonBase-root MuiIconButton-root jss45 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                                                aria-disabled="false"><span class="MuiIconButton-label"><input
+                                    <div class="MuiFormGroup-root"><label class="label1"><span
+                                                class="MuiButtonBase-root"
+                                                aria-disabled="false"><input
                                                         class="jss48" id="policy" name="policy" type="checkbox"
                                                         data-indeterminate="false" value=""></span><span
                                                     class="MuiTouchRipple-root"></span></span><span
-                                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">
+                                                class="MuiTypography-body1">
                                                 <div><span>Tôi đã đọc, hiểu và đồng ý với tất cả các <a
                                                             style="color: rgb(0, 111, 60);" href="#"><span
                                                                 style="font-style: italic; text-decoration: underline;">điều
                                                                 khoản, điều kiện và chính sách</span></a> liên
                                                         quan</span></div>
                                             </span></label></div>
-                                    <p class="MuiFormHelperText-root"></p>
                                 </fieldset>
                             </div>
                         </div>
                     </div>
-                    <div class="checkout-twostyle__ButtonWrapper-sc-14n4o2h-2 jKjmRt" style="padding-top: 0px;">
+                    <div class="jKjmRt" style="padding-top: 0px;">
                         <button id="paymentButton" type="submit"
-                            class="button__StyledButton-sc-6gren8-0 hCwjNQ btnCheckout btnCheckout_dis" disabled>
+                            class="hCwjNQ btnCheckout btnCheckout_dis" disabled>
                             Tiến hành thanh toán
                         </button>
                     </div>

@@ -23,7 +23,7 @@
                 <img src="https://phuclong.com.vn/images/logo_2.png" alt="Logo">
             </div>
             <div class="h_right_sub">
-                <a id="usename" href="#" onclick="login()">
+                <a id="usename" href="./login.html">
                     <strong>Đăng nhập</strong>
                 </a>
                 <div class="h_right">
@@ -33,7 +33,7 @@
                     <div id="mini-cart" class="mini-cart">
                         <div class="mini-cart__content">
                             <div class="cart-info">
-                                Giỏ hàng của bạn <a name="checkout" href="#" class="btn btn-default" onclick="cart()">
+                                Giỏ hàng của bạn <a name="checkout" href="./card.html" class="btn btn-default">
                                     Xem
                                     chi tiết </a>
                             </div>
@@ -42,7 +42,6 @@
                                 <div class="scrollbar-macosx scroll-content"
                                     style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 150px; overflow: auto;">
                                     <ul style="padding-left: inherit;" class="cart-list">
-                                        <!-- ngRepeat: product in products -->
                                         <li class="cart-list__item ng-scope first" ng-repeat="product in products"
                                             ng-class="{ first: $index === 0 }">
                                             <div class="item-thumb">
@@ -57,7 +56,6 @@
                                                     class="ng-binding">Hồng
                                                     trà caramel dừa đá xay</a>
                                                 <div class="item-extra note ng-binding">Ice regular size </div>
-                                                <!-- ngRepeat: option in product.options.extra -->
                                                 <div class="item-qty">
                                                     <span class="quantity ng-binding"
                                                         data-id="613d8ff12a6dae739d7d9858b4ee04b9"
@@ -81,9 +79,9 @@
                                 <label>Tổng tiền</label> <span id="all-total" class="price ng-binding"
                                     ng-bind="total().money">100.000 đ</span>
                             </div>
-                            <div class="checkout-twostyle__ButtonWrapper-sc-14n4o2h-2 jKjmRt" style="padding-top: 0px;">
-                                <button type="submit" class="button__StyledButton-sc-6gren8-0 hCwjNQ btnCheckout button_hover"
-                                    onclick="pay()">Thanh toán</button>
+                            <div class="jKjmRt" style="padding-top: 0px;">
+                                <a href="./pay.html"><button type="submit" class="hCwjNQ btnCheckout button_hover"
+                                    >Thanh toán</button></a>
                             </div>
                         </div>
                     </div>
@@ -100,21 +98,21 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav_a" aria-current="page" href="#"
-                                    onclick="home()">TRANG CHỦ</a>
+                                <a class="nav_a" aria-current="page" href="./index.html"
+                                    >TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="cafe()">CÀ PHÊ</a>
+                                <a class="nav_a" href="./cafe.html">CÀ PHÊ</a>
                             </li>
                             <li class="nav-item">
-                                <a  style="color: #0c713d;" class="nav_a" href="#" onclick="tea()">TRÀ</a>
+                                <a  style="color: #0c713d;" class="nav_a" href="./tea.html">TRÀ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="menu()">THỨC UỐNG</a>
+                                <a class="nav_a" href="./menu.html">THỨC UỐNG</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" tabindex="-1" aria-disabled="true"
-                                    onclick="pay()">THANH TOÁN</a>
+                                <a class="nav_a" href="./pay.html" tabindex="-1" aria-disabled="true"
+                                    >THANH TOÁN</a>
                             </li>
                         </ul>
                     </div>
@@ -133,9 +131,9 @@
     <div class="b_container_sub">
         <div class="container">
             <ul class="breadcrumb" aria-label="breadcrumbs">
-                <li><a href="#" onclick="home()">Trang chủ</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
                 <P>/</P>
-                <li class="active"><a style="color: #777" href="#" onclick="tea()">Lá trà Phúc Long</a></li>
+                <li class="active"><a style="color: #777" href="./tea.html">Lá trà Phúc Long</a></li>
             </ul>
             <h1>LÁ TRÀ PHÚC LONG</h1>
             <div class="separator-icon gray">

@@ -34,7 +34,7 @@
                     <div id="mini-cart" class="mini-cart">
                         <div class="mini-cart__content">
                             <div class="cart-info">
-                                Giỏ hàng của bạn <a name="checkout" href="#" class="btn btn-default" onclick="cart()">
+                                Giỏ hàng của bạn <a name="checkout" href="./card.html" class="btn btn-default">
                                     Xem
                                     chi tiết </a>
                             </div>
@@ -82,9 +82,9 @@
                                 <label>Tổng tiền</label> <span id="all-total" class="price ng-binding"
                                     ng-bind="total().money">100.000 đ</span>
                             </div>
-                            <div class="checkout-twostyle__ButtonWrapper-sc-14n4o2h-2 jKjmRt" style="padding-top: 0px;">
-                                <button type="submit" class="button__StyledButton-sc-6gren8-0 hCwjNQ btnCheckout button_hover"
-                                    onclick="pay()">Thanh toán</button>
+                            <div class="jKjmRt" style="padding-top: 0px;">
+                                <a href="./pay.html"><button type="submit" class="hCwjNQ btnCheckout button_hover"
+                                    >Thanh toán</button></a>
                             </div>
                         </div>
                     </div>
@@ -101,21 +101,21 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav_a" aria-current="page" href="#"
-                                    onclick="home()">TRANG CHỦ</a>
+                                <a class="nav_a" aria-current="page" href="./index.html"
+                                    >TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="cafe()">CÀ PHÊ</a>
+                                <a class="nav_a" href="./cafe.html">CÀ PHÊ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="tea()">TRÀ</a>
+                                <a class="nav_a" href="./tea.html">TRÀ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" onclick="menu()">THỨC UỐNG</a>
+                                <a class="nav_a" href="./menu.html">THỨC UỐNG</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav_a" href="#" tabindex="-1" aria-disabled="true"
-                                    onclick="pay()">THANH TOÁN</a>
+                                <a class="nav_a" href="./pay.html" tabindex="-1" aria-disabled="true"
+                                    >THANH TOÁN</a>
                             </li>
                         </ul>
                     </div>
@@ -137,41 +137,41 @@
     <div class="b_container_sub">
         <div class="container">
             <ul class="breadcrumb" aria-label="breadcrumbs">
-                <li><a href="#" onclick="home()">Trang chủ</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
                 <P>/</P>
-                <li class="active"><a style="color: #777" href="#" onclick="cart()">Giỏ Hàng</a></li>
+                <li class="active"><a style="color: #777" href="./card.html">Giỏ Hàng</a></li>
             </ul>
             <h1>Giỏ Hàng</h1>
             <div class="separator-icon gray">
                 <img src="https://phuclong.com.vn/images/icon_tealeaves.png" alt="">
             </div>
             <div class="container__cart">
-                <div class="row col-md-12">
-                    <div class="title__cart-product col-md-3 card__sub">
+                <div class="row col-12">
+                    <div class="title__cart-product col-3 card__sub">
                         <p style="margin: 0;"> Sản Phẩm</p>
                     </div>
-                    <div class="title__cart-imfor col-md-9 card__sub">
-                        <p style="margin: 0;" class="col-md-3"> Giá bán</p>
-                        <p style="margin: 0;" class="col-md-3"> Số lượng</p>
-                        <p style="margin: 0;" class="col-md-3" style="margin-right: 1.5em;"> Tổng tiền</p>
+                    <div class="title__cart-imfor col-9 card__sub">
+                        <p style="margin: 0;" class="col-3"> Giá bán</p>
+                        <p style="margin: 0;" class="col-3"> Số lượng</p>
+                        <p style="margin: 0;" class="col-3" style="margin-right: 1.5em;"> Tổng tiền</p>
                     </div>
                 </div>
                 <div class="card_render">
-                    <div class="row col-md-12 cart__show">
+                    <div class="row col-md-3 cart__show">
                         <div class="carl__product col-md-3">
                             <img src="https://phuclong.com.vn/uploads/dish/c4692e6548c0af-65000306hngtrcarameldaxay.png"
                                 width="20%" alt="Ảnh">
                             <strong> Hồng trà caramel dừa đá xay</strong>
                         </div>
                         <div class="cart__price col-md-9 card__sub">
-                            <div class="cart__price-item col-md-3" style="font-size: 18px;"> 50.000
+                            <div class="cart__price-item col-md-3"> 50.000
                                 đ </div>
                             <div class="cart__price-item col-md-3 ">
                                 <button class="decrease"> - </button>
                                 <span style="margin: 0 10px;" class="quantity">1</span>
                                 <button class="increase"> + </button>
                             </div>
-                            <div class="cart__price-item col-md-3" style="font-size: 18px;"> 50.000
+                            <div class="cart__price-item col-md-3"> 50.000
                                 đ </div>
                         </div>
                         <div class="closesub" style="width: auto !important;">
@@ -182,14 +182,14 @@
 
                 </div>
                 <div class="price__cart-total">
-                    <p style="font-size: 24px;">Tổng cộng :</p>
-                    <strong id="all-total-sub" style="font-size: 24px; color:red;"> 150.000 đ</strong>
+                    <p style="font-size: 20px;">Tổng cộng :</p>
+                    <strong id="all-total-sub" style="font-size: 20px; color:red;"> 150.000 đ</strong>
                 </div>
-                <div class="checkout-twostyle__ButtonWrapper-sc-14n4o2h-2 jKjmRt"
+                <div class="jKjmRt"
                     style="padding-top: 0px; margin-top: 50px; display: flex; align-items: center; justify-content: center;">
-                    <button style="max-width: 600px;" type="submit"
-                        class="button__StyledButton-sc-6gren8-0 hCwjNQ btnCheckout button_hover" onclick="pay()">Thanh
-                        toán</button>
+                    <a href="./pay.html"><button type="submit"
+                        class="hCwjNQ btnCheckout button_hover">Thanh
+                        toán</button></a>
                 </div>
             </div>
             <!-- <div class="content content_sub" id="card-show">

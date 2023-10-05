@@ -1,24 +1,4 @@
-function login() {
-    window.location.replace('/login.html');
-}
-function home() {
-    window.location.replace('/index.html');
-}
-function cafe() {
-    window.location.replace('/cafe.html');
-}
-function tea() {
-    window.location.replace('/tea.html');
-}
-function menu() {
-    window.location.replace('/menu.html');
-}
-function pay() {
-    window.location.replace('/pay.html');
-}
-function cart() {
-    window.location.replace('/card.html');
-}
+
 // Lấy chuỗi JSON từ localStorage
 var itemsJSON = localStorage.getItem('currents');
 // Chuyển đổi chuỗi JSON thành mảng

@@ -1,24 +1,4 @@
-function login() {
-    window.location.replace('/login.html');
-}
-function home() {
-    window.location.replace('/index.html');
-}
-function cafe() {
-    window.location.replace('/cafe.html');
-}
-function tea() {
-    window.location.replace('/tea.html');
-}
-function menu() {
-    window.location.replace('/menu.html');
-}
-function pay() {
-    window.location.replace('/pay.html');
-}
-function cart() {
-    window.location.replace('/card.html');
-}
+
 
 const products = [
     {
@@ -160,20 +140,16 @@ priceRangeSelect.addEventListener('change', function () {
     const selectedOption = priceRangeSelect.value;
     const copiedArray = [...products];
     if (selectedOption === 'asc') {
-        // Sort products by ascending price
         copiedArray.sort(function (a, b) {
             return parseFloat(a.price) - parseFloat(b.price);
         });
     } else if (selectedOption === 'desc') {
-        // Sort products by descending price
         copiedArray.sort(function (a, b) {
             return parseFloat(b.price) - parseFloat(a.price);
         });
     } else if (selectedOption === '') {
         renderUI(products);
     }
-
-    // Render the sorted product list
     renderUI(copiedArray);
 });
 
@@ -182,10 +158,8 @@ const searchInput = document.getElementById('search-term');
 searchButton.addEventListener('click', function (event) {
     const keyword = searchInput.value.trim().toLowerCase();
     if (keyword === '') {
-        // If the search input is empty, render all products
         renderUI(products);
     } else {
-        // Filter products based on the keyword
         const filteredProducts = products.filter(function (product) {
             const productName = product.name.toLowerCase();
             return productName.includes(keyword);
@@ -197,15 +171,13 @@ searchButton.addEventListener('click', function (event) {
     searchInput.value = '';
 });
 function renderShopData() {
-    // Lấy chuỗi JSON từ localStorage
     var itemsJSON = localStorage.getItem('currents');
-    // Chuyển đổi chuỗi JSON thành mảng
     var items = JSON.parse(itemsJSON);
     renderShop(items);
 }
 function renderTotal(arr) {
     var allTotal = document.getElementById('all-total');
-    var total = 0; // Khởi tạo biến total trước vòng lặp
+    var total = 0;
     if (arr.length === 0) {
         var totalsub = '';
         allTotal.innerHTML = totalsub;

@@ -10,6 +10,9 @@
 .mt-20 {
     margin-top: 20px;
 }
+.pt-10 {
+    padding-top: 10px;
+}
 
 header {
     position: fixed;
@@ -531,6 +534,7 @@ label {
     color: #0C713D;
     font-weight: 700;
     font-size: 22px;
+    line-height: 37px;
 }
 
 .add-item span.change-qty.decrease {
@@ -740,10 +744,23 @@ button:focus:not(:focus-visible) {
     .carl__product strong {
         font-size: 14px;
     }
+
+    .item-info__name {
+        font-size: 22px !important;
+    }
+
+    .item-info__price div {
+        font-size: 20px !important;
+    }
+
+    .product-modal .item-price {
+        font-size: 26px !important;
+    }
 }
+
 .row {
-    margin-top: 0 !important; 
-    margin-right: 0 !important; 
+    margin-top: 0 !important;
+    margin-right: 0 !important;
     margin-left: 0 !important;
 }
 
@@ -790,7 +807,7 @@ button:focus:not(:focus-visible) {
         margin-right: 0;
     }
 
-    .jKjmRt a button {
+    .widthbutton {
         min-width: 300px !important;
     }
 
@@ -801,6 +818,18 @@ button:focus:not(:focus-visible) {
     .card__sub {
         font-size: 13px;
         font-weight: bold;
+    }
+
+    .item-info__name {
+        font-size: 20px !important;
+    }
+
+    .item-info__price div {
+        font-size: 16px !important;
+    }
+
+    .product-modal .item-price {
+        font-size: 24px !important;
     }
 }
 

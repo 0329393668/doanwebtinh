@@ -1,6 +1,6 @@
 .mini-cart {
     margin: 0;
-    padding: 10px 0 10px;
+    padding: 10px 0 0px;
 }
 
 .mini-cart {
@@ -86,7 +86,7 @@ label {
     width: 100%;
 }
 
-.jKjmRt a button {
+.widthbutton {
     min-width: 600px;
 }
 

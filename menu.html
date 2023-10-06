@@ -79,7 +79,7 @@
 
                             <div class="cart-total text-center">
                                 <label>Tổng tiền</label> <span id="all-total" class="price ng-binding"
-                                    ng-bind="total().money"></span>
+                                    ng-bind="total().money">100.000 đ</span>
                             </div>
                             <div class="jKjmRt" style="padding-top: 0px;">
                                 <a href="./pay.html"><button type="submit" class="hCwjNQ btnCheckout button_hover"
@@ -143,7 +143,7 @@
             </div>
             <div style="margin: 20px 0;" class="row">
                 <!-- <form id="category_filter" class="form-inline ng-pristine ng-valid"> -->
-                <div class="category_filter_1 col-xs-12 col-md-6 col-sm-6 text-center ">
+                <div class="category_filter_1 pt-10 col-xs-12 col-md-6 col-sm-6 text-center ">
                     <label for="price-range">Theo giá</label>
                     <div class="btn-group bootstrap-select">
                         <div class="dropdown-menu open" role="combobox">
@@ -166,7 +166,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="category_filter_2 col-xs-12 col-sm-6 col-md-6 text-center">
+                <div class="category_filter_2 pt-10 col-xs-12 col-sm-6 col-md-6 text-center">
                     <label for="product-name">Tìm kiếm</label>
                     <div class="input-group add-on">
                         <input class="form-control" placeholder="Tên sản phẩm" name="keyword" id="search-term"
@@ -196,47 +196,32 @@
                                         ng-src="https://phuclong.com.vn/uploads/dish/437b59a57e7efd-6500030465000305trlongdacaramel.png"
                                         src="https://phuclong.com.vn/uploads/dish/437b59a57e7efd-6500030465000305trlongdacaramel.png">
 
-                                    <div class="item-price ng-binding"> 55.000 đ</div>
-
-                                    <!-- <ul class="text-center item-info__rating list-inline">
-                                        <li ng-repeat="r in productRate track by $index" class="" ng-class='r == 1? "icon-pli-rating-fill" : "icon-pli-rating-line"'></li>
-                                    </ul> -->
-
-
+                                    <div class="item-price"> 55.000 đ</div>
+ 
                                 </div>
                                 <div class="col-md-7" style="padding-top: 40px;">
                                     <div class="item-info">
                                         <div
-                                            class="item-info__name hidden-xs hidden-sm visible-md visible-lg ng-binding">
+                                            class="item-info__name">
                                             Trà Ô long dừa Caramel
-                                        </div>
-                                        <div class="item-info__excerpt ng-binding">
                                         </div>
                                         <!-- ngIf: productSizes.length > 0 -->
                                         <div class="item-info__size ng-scope" ng-if="productSizes.length > 0">
                                             <label for="size">Kích cỡ</label>
                                             <ul class="list-inline">
-                                                <!-- ngRepeat: size in productSizes --><!-- ngIf: size.price >= 0 -->
                                                 <li ng-if="size.price >= 0" ng-repeat="size in productSizes"
                                                     ng-class="{active : productSize === size }"
                                                     ng-click="changeSize(size)" class="ng-scope active">
-                                                    <a href="javascript:void(0);" class="ng-binding">Ice regular size
+                                                    <a href="javascript:void(0);" class=">Ice regular size
                                                     </a>
                                                 </li>
-                                                <!-- end ngIf: size.price >= 0 --><!-- end ngRepeat: size in productSizes --><!-- ngIf: size.price >= 0 -->
                                                 <li ng-if="size.price >= 0" ng-repeat="size in productSizes"
                                                     ng-class="{active : productSize === size }"
                                                     ng-click="changeSize(size)" class="ng-scope">
-                                                    <a href="javascript:void(0);" class="ng-binding">Big size ice </a>
-                                                </li>
-                                                <!-- end ngIf: size.price >= 0 --><!-- end ngRepeat: size in productSizes -->
+                                                    <a href="javascript:void(0);" class=">Big size ice </a>
+                                                </li>                                   
                                             </ul>
-
-
-                                        </div><!-- end ngIf: productSizes.length > 0 -->
-
-                                        <!-- ngIf: extras.length > 0 -->
-
+                                        </div>
                                         <div class="item-info__quantity">
                                             <label for="qty">Số lượng</label>
 
@@ -251,7 +236,7 @@
                                         </div>
                                         <div class="item-info__price">
                                             <label for="">Giá</label>
-                                            <div class="color-primary ng-binding"> 55.000 đ </div>
+                                            <div class="color-primary"> 55.000 đ </div>
                                         </div>
                                     </div>
 
@@ -260,18 +245,6 @@
 
                                         <button id="add-to-cart-dh" class="btn btn-default add-to-cart single"
                                             data-id="685" data-dismiss="modal">Đặt hàng</button>
-
-                                        <!--        <a name="checkout" class="btn btn-default" href="https://phuclong.com.vn/thanh-toan"> Thanh toán</a> -->
-
-                                        <input type="hidden" name="productSize"
-                                            value="{&quot;title&quot;:&quot;[:vi]Ice regular size[:en]Ice regular size[:]&quot;,&quot;id&quot;:2,&quot;price&quot;:55000}">
-                                        <input type="hidden" name="productPrice" id="productPrice" value="55000">
-                                        <input type="hidden" name="productExtraPrice" value="">
-                                        <input type="hidden" name="productQty" value="1">
-                                        <input type="hidden" name="orderNotes" value="">
-                                        <input type="hidden" name="productExtras" value="">
-                                        <input type="hidden" name="productSizeId" value="2">
-
                                     </div>
                                 </div>
                             </div>

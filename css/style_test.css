@@ -29,6 +29,20 @@
     }
 }
 
+@media (max-width: 510px) {
+    .ctLLHI .box-left,
+    .ctLLHI .box-right {
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .ctLLHI .box-left,
+    .ctLLHI .box-right {
+        min-width: initial;
+    }
+}
+
 .ctLLHI .box-left,
 .ctLLHI .box-right {
     border: 1px solid rgb(217, 217, 217);

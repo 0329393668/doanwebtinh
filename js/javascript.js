@@ -237,7 +237,7 @@ function renderProduct(product) {
         <div class="modal-dialog">
                         <div class="modal-content" ng-show="isTab(1)">
                             <div class="modal-body product-modal">
-                                <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal"
+                                <button style="float: right;position: absolute;right: 12px;" type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                                 <div class="row">
                                     <div class="col-md-5">
@@ -248,12 +248,6 @@ function renderProduct(product) {
                                             src="${product.img}">
     
                                         <div class="item-price ng-binding"> ${product.price.toLocaleString()} đ </div>
-    
-                                        <!-- <ul class="text-center item-info__rating list-inline">
-                                            <li ng-repeat="r in productRate track by $index" class="" ng-class='r == 1? "icon-pli-rating-fill" : "icon-pli-rating-line"'></li>
-                                        </ul> -->
-    
-    
                                     </div>
                                     <div class="col-md-7" style="padding-top: 40px;">
                                         <div class="item-info">
@@ -263,8 +257,7 @@ function renderProduct(product) {
                                             </div>
                                             <div class="item-info__excerpt ng-binding">
                                                 ${product.desc}
-                                            </div>
-                                            <!-- ngIf: productSizes.length > 0 -->
+                                            </div>                                       
                                             <div class="item-info__size ng-scope" ng-if="productSizes.length > 0">
                                                 <label for="size">Kích cỡ</label>
                                                 <ul class="list-inline">
@@ -276,12 +269,7 @@ function renderProduct(product) {
                                                         </a>
                                                     </li>
                                                 </ul>
-    
-    
-                                            </div><!-- end ngIf: productSizes.length > 0 -->
-    
-                                            <!-- ngIf: extras.length > 0 -->
-    
+                                            </div>
                                             <div class="item-info__quantity">
                                                 <label for="qty">Số lượng</label>
     
@@ -299,25 +287,9 @@ function renderProduct(product) {
                                                 <div class="color-primary ng-binding"> ${product.price.toLocaleString()} đ </div>
                                             </div>
                                         </div>
-    
-    
                                         <div class="product-action">
-    
                                             <button id="add-to-cart-dh" class="btn btn-default add-to-cart single" data-id="${product.id}"
                                             data-bs-dismiss="modal" >Đặt hàng</button>
-    
-                                            <!--        <a name="checkout" class="btn btn-default" href="https://phuclong.com.vn/thanh-toan"> Thanh toán</a> -->
-    
-    
-                                            <input type="hidden" name="productSize"
-                                                value="{&quot;title&quot;:&quot;[:vi]Ice regular size[:en]Ice regular size[:]&quot;,&quot;id&quot;:2,&quot;price&quot;:55000}">
-                                            <input type="hidden" name="productPrice" id="productPrice" value="55000">
-                                            <input type="hidden" name="productExtraPrice" value="">
-                                            <input type="hidden" name="productQty" value="1">
-                                            <input type="hidden" name="orderNotes" value="">
-                                            <input type="hidden" name="productExtras" value="">
-                                            <input type="hidden" name="productSizeId" value="2">
-    
                                         </div>
                                     </div>
                                 </div>
